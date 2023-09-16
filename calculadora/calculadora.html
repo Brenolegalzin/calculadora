@@ -1,0 +1,65 @@
+<html lang="pt-br">
+  <head>
+    <title>Calculadora</title>
+  </head>
+  <body>
+   <center>
+    <h1>Calculadora</h1>
+    <input id="num1">
+    <input id="num2">
+    <div>
+      <button onclick="soma()" id="+">+</button>
+      <button onclick="diminuir()" id="-">-</button>
+      <button onclick="multiplicar()" id="x">x</button>
+      <button onclick="dividir()" id="/">/</button>
+    </div>
+    <div>
+      <p>Resultado :</p>
+      <p id="result">0</p>
+    </div>
+   </center>
+  </body>
+  <style>
+    *{
+       background-color :gray;
+    }
+    h1{
+      font-family :'Arial';
+      font-size :45px;
+    }
+    input{
+      background-color :white;
+      color :red;
+    }
+    button{
+      background-color :white;
+      font-size :30px;
+    }
+    p{
+      font-family :'Arial';
+      font-size :20px;
+    }
+  </style>
+</html>
+<script>
+	function soma(){
+      let num1 = parseInt(document.getElementById("num1").value);
+      let num2 = parseInt(document.getElementById("num2").value);
+      document.getElementById("result").innerHTML = num1+num2;
+    }
+    function diminuir(){
+      let num1 = parseInt(document.getElementById("num1").value);
+      let num2 = parseInt(document.getElementById("num2").value);
+      document.getElementById("result").innerHTML = num1-num2;
+    }
+    function multiplicar(){
+      let num1 = parseInt(document.getElementById("num1").value);
+      let num2 = parseInt(document.getElementById("num2").value);
+      document.getElementById("result").innerHTML = num1*num2;
+    }
+    function dividir(){
+      let num1 = parseInt(document.getElementById("num1").value);
+      let num2 = parseInt(document.getElementById("num2").value);
+      document.getElementById("result").innerHTML = num1/num2;
+    }
+</script>
