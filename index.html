@@ -1,0 +1,57 @@
+<html lang="pt-br">
+  <head>
+    <title>calculadora</title>
+  </head>
+  <body>
+    <center>
+      <p id="result">0</p>
+      <div>
+		<button onclick="limpar()">C</button>
+        <button onclick="numeroUm()">1</button>
+        <button onclick="dois()">2</button>
+        <button onclick="mais()">+</button>
+      </div>
+      <div>
+        <button onclick="tres()">3</button>
+        <button onclick="quatro()">4</button>
+        <button onclick="cinco()">5</button>
+        <button onclick="menos()">-</button>
+      </div>
+      <div>
+		<button onclick="seis()">6</button>
+		<button onclick="sete()">7</button>
+		<button onclick="oito()">8</button>
+        <button onclick="vezes()">x</button>
+      </div>
+      <div>
+        <button onclick="nove()">9</button>
+        <button onclick="zero()">0</button>
+        <button onclick="ponto()">.</button>
+        <button onclick="dividir()">/</button>
+      </div>
+      <div>
+        <button onclick="calcular()">=</button>
+      </div>
+    </center>
+  </body>
+  <style>
+    *{
+		background-color :purple;
+	}
+	p{
+		font-family :'Arial';
+		color :white;
+		white-space :pre;
+		font-size :90px;
+	}
+	button{
+		font-family :'Arial';
+		color :white;
+		background-color :orange;
+		width :90px;
+		height :90px;
+		font-size :40px;
+	}
+  </style>
+</html>
+<script src="script.js"></script>
